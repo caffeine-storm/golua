@@ -95,6 +95,12 @@ func (L *State) PushGoFunction(f LuaGoFunction) {
 	C.clua_pushgofunction(L.s, C.uint(fid))
 }
 
+// Like lua_pushcclosure
+func (L *State) PushGoClosure(f LuaGoFunction, n uint) {
+	L.PushGoFunction(f)
+	C.clua_pushcclosure(L.s, C.uint(n))
+}
+
 // Sets a metamethod to execute a go function
 //
 // The code:

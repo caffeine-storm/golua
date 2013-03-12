@@ -7,6 +7,7 @@ void clua_initstate(lua_State* L);
 
 unsigned int clua_togofunction(lua_State* L, int index);
 unsigned int clua_togostruct(lua_State *L, int index);
+void clua_pushcclosure(lua_State* L, unsigned int n);
 void clua_pushcallback(lua_State* L);
 void clua_pushgofunction(lua_State* L, unsigned int fid);
 void clua_pushgostruct(lua_State *L, unsigned int fid);
