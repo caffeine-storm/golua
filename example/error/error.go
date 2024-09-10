@@ -1,6 +1,6 @@
 package main
 
-import "../lua"
+import "github.com/MobRulesGames/golua/lua"
 import "fmt"
 import "errors"
 import "os"

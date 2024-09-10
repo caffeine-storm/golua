@@ -1,6 +1,6 @@
 package main
 
-import "../lua"
+import "github.com/MobRulesGames/golua/lua"
 import "fmt"
 
 func test(L *lua.State) int {
