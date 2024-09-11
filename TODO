@@ -1,3 +1,6 @@
+- tmckee: needed to manually install liblua5.1 ; is there a way to do this
+	automagically?
+
 - find all calls to lua api that can result in lua_error calls and rework them (for example checkarg stuff)
 - lua.go: Dump implementing lua_dump
 - lua.go: Load implementing lua_load
