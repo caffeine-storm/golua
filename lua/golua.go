@@ -22,6 +22,7 @@ type Alloc func(ptr unsafe.Pointer, osize uint, nsize uint) unsafe.Pointer
 type LuaGoFunction func(L *State) int
 
 // Wrapper to keep cgo from complaining about incomplete ptr type
+//
 //export State
 type State struct {
 	// Wrapped lua_State object
